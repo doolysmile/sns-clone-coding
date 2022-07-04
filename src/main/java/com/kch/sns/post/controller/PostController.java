@@ -6,6 +6,8 @@ import com.kch.sns.post.domain.PostWriteRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @AllArgsConstructor
 @RequestMapping("post")
@@ -21,7 +23,7 @@ public class PostController {
 
     @PostMapping("update")
     public String updatePost(@RequestBody PostWriteRequest postWriteRequest){
-        postService.update(new Post(postWriteRequest.getTitle(),postWriteRequest.getContent()));
+        postService.update(new Post(postWriteRequest.getSeq(), postWriteRequest.getTitle(), postWriteRequest.getContent()));
         return "success";
     }
 
@@ -33,8 +35,13 @@ public class PostController {
 
     @GetMapping("list")
     public String listPost(){
-        postService.findAll();
-        return "success";
+        List<Post> all = postService.findAll();
+        for(int i = 0; i < all.size(); i++){
+            System.out.println(all.get(i).getSeq());
+            System.out.println(all.get(i).getTitle());
+            System.out.println(all.get(i).getContent());
+        }
+        return "successlist";
     }
 
 
