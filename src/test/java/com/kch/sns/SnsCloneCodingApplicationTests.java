@@ -1,4 +1,4 @@
-package comkch.sns;
+package com.kch.sns;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
