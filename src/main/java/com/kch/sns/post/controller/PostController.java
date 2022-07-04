@@ -1,14 +1,10 @@
-package comkch.sns.post.controller;
+package com.kch.sns.post.controller;
 
-import comkch.sns.post.domain.Post;
-import comkch.sns.post.domain.PostWriteRequest;
-import comkch.sns.post.repository.JdbcPostRepository;
-import comkch.sns.post.service.PostService;
+import com.kch.sns.post.service.PostService;
+import com.kch.sns.post.domain.Post;
+import com.kch.sns.post.domain.PostWriteRequest;
 import lombok.AllArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @AllArgsConstructor

@@ -1,6 +1,6 @@
-package comkch.sns.post.repository;
+package com.kch.sns.post.repository;
 
-import comkch.sns.post.domain.Post;
+import com.kch.sns.post.domain.Post;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public class JdbcPostRepository implements PostRepository{

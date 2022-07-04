@@ -1,4 +1,4 @@
-package comkch.sns.post.domain;
+package com.kch.sns.post.domain;
 
 import lombok.Getter;
 

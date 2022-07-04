@@ -1,11 +1,7 @@
-package comkch.sns.post.domain;
+package com.kch.sns.post.domain;
 
 
-import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
-
-import java.time.LocalDateTime;
 
 @Getter
 public class Post {

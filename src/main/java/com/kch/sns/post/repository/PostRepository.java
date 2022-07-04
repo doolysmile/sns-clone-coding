@@ -1,9 +1,8 @@
-package comkch.sns.post.repository;
+package com.kch.sns.post.repository;
 
-import comkch.sns.post.domain.Post;
+import com.kch.sns.post.domain.Post;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface PostRepository {
 

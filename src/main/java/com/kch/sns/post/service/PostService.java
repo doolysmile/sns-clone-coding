@@ -1,7 +1,7 @@
-package comkch.sns.post.service;
+package com.kch.sns.post.service;
 
-import comkch.sns.post.domain.Post;
-import comkch.sns.post.repository.PostRepository;
+import com.kch.sns.post.domain.Post;
+import com.kch.sns.post.repository.PostRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
